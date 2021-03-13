@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC13347425FCCCF40051D59E /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC13347325FCCCF40051D59E /* NetworkMonitor.swift */; };
 		EC53C2E925FC560700FBAA96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C2E825FC560700FBAA96 /* AppDelegate.swift */; };
 		EC53C2EB25FC560700FBAA96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C2EA25FC560700FBAA96 /* SceneDelegate.swift */; };
 		EC53C2F325FC560700FBAA96 /* SwiftPlayground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC53C2F125FC560700FBAA96 /* SwiftPlayground.xcdatamodeld */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC13347325FCCCF40051D59E /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		EC53C2E525FC560700FBAA96 /* SwiftPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC53C2E825FC560700FBAA96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC53C2EA25FC560700FBAA96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				EC53C30E25FC622700FBAA96 /* Extensions.swift */,
+				EC13347325FCCCF40051D59E /* NetworkMonitor.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC53C30F25FC622700FBAA96 /* Extensions.swift in Sources */,
+				EC13347425FCCCF40051D59E /* NetworkMonitor.swift in Sources */,
 				EC53C30425FC581E00FBAA96 /* PanGestureVC.swift in Sources */,
 				EC53C2E925FC560700FBAA96 /* AppDelegate.swift in Sources */,
 				EC53C2F325FC560700FBAA96 /* SwiftPlayground.xcdatamodeld in Sources */,
