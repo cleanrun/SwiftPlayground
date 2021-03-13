@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EC13347425FCCCF40051D59E /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC13347325FCCCF40051D59E /* NetworkMonitor.swift */; };
+		EC341A9F25FD085000909B0E /* TVAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC341A9E25FD085000909B0E /* TVAnimationVC.swift */; };
+		EC341AA325FD094100909B0E /* TVAnimationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC341AA225FD094100909B0E /* TVAnimationCell.swift */; };
 		EC53C2E925FC560700FBAA96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C2E825FC560700FBAA96 /* AppDelegate.swift */; };
 		EC53C2EB25FC560700FBAA96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C2EA25FC560700FBAA96 /* SceneDelegate.swift */; };
 		EC53C2F325FC560700FBAA96 /* SwiftPlayground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC53C2F125FC560700FBAA96 /* SwiftPlayground.xcdatamodeld */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		EC13347325FCCCF40051D59E /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		EC341A9E25FD085000909B0E /* TVAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVAnimationVC.swift; sourceTree = "<group>"; };
+		EC341AA225FD094100909B0E /* TVAnimationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVAnimationCell.swift; sourceTree = "<group>"; };
 		EC53C2E525FC560700FBAA96 /* SwiftPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC53C2E825FC560700FBAA96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC53C2EA25FC560700FBAA96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC341A9D25FD082500909B0E /* TV Animation */ = {
+			isa = PBXGroup;
+			children = (
+				EC341A9E25FD085000909B0E /* TVAnimationVC.swift */,
+				EC341AA225FD094100909B0E /* TVAnimationCell.swift */,
+			);
+			path = "TV Animation";
+			sourceTree = "<group>";
+		};
 		EC53C2DC25FC560700FBAA96 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +75,7 @@
 		EC53C2E725FC560700FBAA96 /* SwiftPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				EC341A9D25FD082500909B0E /* TV Animation */,
 				EC53C30D25FC621600FBAA96 /* Utilities */,
 				EC53C30225FC578100FBAA96 /* Life Cycle */,
 				EC53C30125FC577900FBAA96 /* Pan Gesture */,
@@ -172,7 +186,9 @@
 			files = (
 				EC53C30F25FC622700FBAA96 /* Extensions.swift in Sources */,
 				EC13347425FCCCF40051D59E /* NetworkMonitor.swift in Sources */,
+				EC341AA325FD094100909B0E /* TVAnimationCell.swift in Sources */,
 				EC53C30425FC581E00FBAA96 /* PanGestureVC.swift in Sources */,
+				EC341A9F25FD085000909B0E /* TVAnimationVC.swift in Sources */,
 				EC53C2E925FC560700FBAA96 /* AppDelegate.swift in Sources */,
 				EC53C2F325FC560700FBAA96 /* SwiftPlayground.xcdatamodeld in Sources */,
 				EC53C2EB25FC560700FBAA96 /* SceneDelegate.swift in Sources */,
