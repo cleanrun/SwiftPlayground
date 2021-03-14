@@ -82,11 +82,11 @@ extension TVAnimationVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 86
+        return 110
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        animateVertically(tableView, for: cell, with: indexPath)
-        //animateHorizontally(tableView, for: cell, with: indexPath)
+        //animateVertically(tableView, for: cell, with: indexPath)
+        animateHorizontally(tableView, for: cell, with: indexPath)
     }
 }

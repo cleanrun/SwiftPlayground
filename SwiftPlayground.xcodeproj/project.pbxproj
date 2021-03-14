@@ -18,6 +18,7 @@
 		EC53C30425FC581E00FBAA96 /* PanGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C30325FC581E00FBAA96 /* PanGestureVC.swift */; };
 		EC53C30A25FC5B0400FBAA96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC53C30925FC5B0400FBAA96 /* Main.storyboard */; };
 		EC53C30F25FC622700FBAA96 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53C30E25FC622700FBAA96 /* Extensions.swift */; };
+		EC8011C425FDAFD6000FC00A /* PinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8011C325FDAFD6000FC00A /* PinVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		EC53C30325FC581E00FBAA96 /* PanGestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGestureVC.swift; sourceTree = "<group>"; };
 		EC53C30925FC5B0400FBAA96 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EC53C30E25FC622700FBAA96 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EC8011C325FDAFD6000FC00A /* PinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +77,11 @@
 		EC53C2E725FC560700FBAA96 /* SwiftPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				EC341A9D25FD082500909B0E /* TV Animation */,
 				EC53C30D25FC621600FBAA96 /* Utilities */,
 				EC53C30225FC578100FBAA96 /* Life Cycle */,
+				EC341A9D25FD082500909B0E /* TV Animation */,
 				EC53C30125FC577900FBAA96 /* Pan Gesture */,
+				EC8011C225FDAFAC000FC00A /* Pin Page */,
 				EC53C2F425FC560A00FBAA96 /* Assets.xcassets */,
 				EC53C2F625FC560A00FBAA96 /* LaunchScreen.storyboard */,
 				EC53C30925FC5B0400FBAA96 /* Main.storyboard */,
@@ -112,6 +115,14 @@
 				EC13347325FCCCF40051D59E /* NetworkMonitor.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EC8011C225FDAFAC000FC00A /* Pin Page */ = {
+			isa = PBXGroup;
+			children = (
+				EC8011C325FDAFD6000FC00A /* PinVC.swift */,
+			);
+			path = "Pin Page";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				EC341AA325FD094100909B0E /* TVAnimationCell.swift in Sources */,
 				EC53C30425FC581E00FBAA96 /* PanGestureVC.swift in Sources */,
 				EC341A9F25FD085000909B0E /* TVAnimationVC.swift in Sources */,
+				EC8011C425FDAFD6000FC00A /* PinVC.swift in Sources */,
 				EC53C2E925FC560700FBAA96 /* AppDelegate.swift in Sources */,
 				EC53C2F325FC560700FBAA96 /* SwiftPlayground.xcdatamodeld in Sources */,
 				EC53C2EB25FC560700FBAA96 /* SceneDelegate.swift in Sources */,
