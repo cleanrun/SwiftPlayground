@@ -41,7 +41,7 @@ class PinVC: UIViewController {
     }
     
     @objc func labelAction() {
-        vcPresent?.dismiss(animated: false, completion: nil)
+        vcPresent?.dismiss(animated: true, completion: nil)
     }
 
 }

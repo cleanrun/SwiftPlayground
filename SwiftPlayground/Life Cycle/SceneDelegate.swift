@@ -18,7 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //guard let _ = (scene as? UIWindowScene) else { return }
         let vc = TVAnimationVC()
         window?.rootViewController = vc
-        window?.makeKeyAndVisible()
+        //window?.makeKeyAndVisible()
+        showPinAfterLaunch(with: window)
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -47,19 +48,45 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
-        goToPin()
+        showPinAfterForeground()
         // Save changes in the application's managed object context when the application transitions to the background.
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
     // MARK: - Custom Functions
     
-    private func goToPin() {
+    private func showPinAfterForeground() {
         let pinVC = PinVC()
         let currentVC = window?.currentViewController()
         pinVC.vcPresent = currentVC
         pinVC.modalPresentationStyle = .overCurrentContext
+        pinVC.modalTransitionStyle = .crossDissolve
         currentVC?.present(pinVC, animated: false, completion: nil)
+    }
+    
+    private func showPinAfterLaunch(with window: UIWindow?) {
+        let vc = PinVC()
+        vc.vcPresent = window?.rootViewController
+        vc.modalPresentationStyle = .overCurrentContext
+        vc.modalTransitionStyle = .crossDissolve
+        
+        let launch = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()!
+        launch.view.frame = vc.view.bounds
+        launch.view.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
+        window?.makeKeyAndVisible()
+        window?.addSubview(launch.view)
+        
+        DispatchQueue.global().async {
+            DispatchQueue.main.async {
+                window?.rootViewController?.present(vc, animated: true) {
+                    UIView.animate(withDuration: 0.5, animations: {
+                        launch.view.alpha = 0
+                    }, completion: { _ in
+                        launch.view.removeFromSuperview()
+                    })
+                }
+            }
+        }
     }
 
 }
